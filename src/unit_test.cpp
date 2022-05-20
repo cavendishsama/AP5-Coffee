@@ -6,7 +6,7 @@
 #include "cappuccino.h"
 #include "mocha.h"
 
-
+/*
 TEST(HW5Test, TEST1) {
     Cinnamon    cinnamon{2};  
     EXPECT_EQ(cinnamon.get_name(), "Cinnamon");
@@ -44,7 +44,7 @@ TEST(HW5Test, TEST3) {
     ingredient = &water;
     EXPECT_EQ(ingredient->get_name(), "Water");
 }
-/*
+
 
 TEST(HW5Test, TEST4) {
     Cappuccino cappuccino{};
@@ -55,7 +55,7 @@ TEST(HW5Test, TEST4) {
     for(const auto& i : ingredients)
         EXPECT_TRUE(i->get_name() == "Espresso" || i->get_name() == "Milk" || i->get_name() == "MilkFoam");
 }
-/*
+
 
 TEST(HW5Test, TEST5) {
     Cappuccino cappuccino{};
@@ -63,8 +63,8 @@ TEST(HW5Test, TEST5) {
     cappuccino.add_side_item(new Cinnamon{1});
     EXPECT_DOUBLE_EQ(cappuccino.price(), 60);
 }
-/*
 
+/*
 TEST(HW5Test, TEST6) {
     EspressoBased* esp{new Cappuccino{}};
     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
@@ -73,8 +73,8 @@ TEST(HW5Test, TEST6) {
     delete esp;
     EXPECT_EQ(sides.size(), 0);
 }
-/*
 
+*/
 TEST(HW5Test, TEST7) {
     Cappuccino cappuccino;
     cappuccino.add_side_item(new Chocolate{2});
@@ -82,7 +82,7 @@ TEST(HW5Test, TEST7) {
     EXPECT_EQ(copy.get_name(), "Cappuccino");
     EXPECT_DOUBLE_EQ(copy.price(), 65);
 }
-/*
+
 
 TEST(HW5Test, TEST8) {
     Cappuccino cappuccino;
@@ -92,7 +92,7 @@ TEST(HW5Test, TEST8) {
     equal = cappuccino;
     EXPECT_EQ(equal.price(), 56);
 }
-/*
+
 
 TEST(HW5Test, TEST9) {
     Cappuccino equal;
