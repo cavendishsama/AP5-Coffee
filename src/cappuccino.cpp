@@ -46,6 +46,10 @@ Cappuccino::~Cappuccino()
 }
 
 void Cappuccino::operator=(const Cappuccino& cap){
+
+    if(this == &cap)
+        return;
+
     ingredients.clear();
     auto temp {const_cast<Cappuccino&>(cap).get_ingredients()};   //constcast bokon
     std::vector<std::string> v {"Cinnamon","Chocolate","Sugar","Cookie", \
