@@ -6,7 +6,7 @@
 #include "cappuccino.h"
 #include "mocha.h"
 
-/*
+
 TEST(HW5Test, TEST1) {
     Cinnamon    cinnamon{2};  
     EXPECT_EQ(cinnamon.get_name(), "Cinnamon");
@@ -64,7 +64,7 @@ TEST(HW5Test, TEST5) {
     EXPECT_DOUBLE_EQ(cappuccino.price(), 60);
 }
 
-/*
+
 TEST(HW5Test, TEST6) {
     EspressoBased* esp{new Cappuccino{}};
     reinterpret_cast<Cappuccino*>(esp)->add_side_item(new Cookie{1});
@@ -74,7 +74,7 @@ TEST(HW5Test, TEST6) {
     EXPECT_EQ(sides.size(), 0);
 }
 
-*/
+
 TEST(HW5Test, TEST7) {
     Cappuccino cappuccino;
     cappuccino.add_side_item(new Chocolate{2});
@@ -100,7 +100,7 @@ TEST(HW5Test, TEST9) {
     equal = equal;
     EXPECT_EQ(equal.price(), 57);
 }
-/*
+
 
 TEST(HW5Test, TEST10) {
     Mocha mocha{};
