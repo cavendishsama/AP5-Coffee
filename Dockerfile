@@ -1,6 +1,5 @@
 FROM gcc:11.2.0
 
-
 RUN apt-get -qq update \
     && apt-get -qq install --no-install-recommends openssh-server \
     && apt-get -qq install --no-install-recommends sudo \
@@ -22,6 +21,14 @@ WORKDIR /usr/src/libraries/googletest/build
 RUN cmake .. \
     && make \
     && make install
+
+# # install UI lib
+# WORKDIR /usr/src/libraries
+# RUN git clone --recursive -b master https://github.com/ArthurSonzogni/FTXUI.git
+# WORKDIR /usr/src/libraries/FTXUI/build
+# RUN cmake .. \
+#     && make \
+#     && make install
 
 # build the project
 WORKDIR /usr/src/app
