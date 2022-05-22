@@ -9,6 +9,15 @@
 #include"ingredient.h"
 #include"sub_ingredients.h"
 
+#include <chrono>                    // for operator""s, chrono_literals
+#include <ftxui/dom/elements.hpp>    // for text, gauge, operator|, flex, hbox, Element
+#include <ftxui/screen/screen.hpp>   // for Screen
+#include <thread>                    // for sleep_for
+#include "ftxui/dom/node.hpp"        // for Render
+#include "ftxui/screen/color.hpp"    // for ftxui
+#include <random>
+#include <iomanip>
+
 class EspressoBased
 {
 public:
