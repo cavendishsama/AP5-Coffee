@@ -15,7 +15,7 @@
 #include <thread>                    // for sleep_for
 #include "ftxui/dom/node.hpp"        // for Render
 #include "ftxui/screen/color.hpp"    // for ftxui
-#include <random>
+#include <ftxui/screen/color_info.hpp>  // for ColorInfo
 #include <iomanip>
 
 class EspressoBased
